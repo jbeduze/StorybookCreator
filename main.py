@@ -2,7 +2,7 @@ import streamlit as st
 
 st.write('Hello fools!')
 
-st.form("Story_form"):
+with st.form('Story_form'):
     with st.expander('',expander=True):
 
     options = ['Initial story Elements','AI Story Builder', 'Build out Summary', 'download']
