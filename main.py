@@ -2,7 +2,7 @@ import streamlit as st
 st.write('Hello fools!')
 
 with st.form('Story elements Form'):
-        options = ['Initial story Elements','AI Story Builder', 'Build out Summary', 'download']
+        options = ['Initial story Elements','AI Story Builder', 'Build out Summary', 'Download Completed Story']
         radio_cols = st.columns([.25,10])
         step = radio_cols[1].radio(label='', label_visibility='collapsed', options=options, horizontal=True, index=0)
         if step == 'Initial story Elements':
@@ -15,12 +15,14 @@ with st.form('Story elements Form'):
                 else:
                         st.warning('Please upload at least one image of your loved one')
                 lmnt_cols = st.columns(2)
-                lmnt_cols[0].text_input('Name of loved one')
-                Genre = lmnt_cols[0].selectbox(
+                with lmnt_cols[0]:
+                        name_of_loved = st.text_input('Name of loved one')
+                        Genre = st.selectbox(
                         "Choose the Genre:",
-                      options=["Adventure", "Fairy Tale", "Animal Story", "Space Exploration", "Magical Fantasy", "surprise me"]
+                        options=["Adventure", "Fairy Tale", "Animal Story", "Space Exploration", "Magical Fantasy", "surprise me"]
                 )
-                lmnt_cols[1].text_input('Relation to loved one')
+                
+                relation = lmnt_cols[1].text_input('Relation to loved one')
 
         submitted = st.form_submit_button('Pull Elements')
 
