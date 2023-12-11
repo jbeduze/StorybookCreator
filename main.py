@@ -33,7 +33,7 @@ with st.form('Story elements Form'):
                         "Choose the Tone/Mood:",
                         options=["Joyful", "Exciting", "Mysterious", "Playful", "Heartwarming", "surprise me"]
                 )
-                with lmnt_col[1]:
+                with lmnt_cols[1]:
                         relation = st.text_input('Relation to loved one')
                         setting = st.selectbox(
                         "Choose the Setting:",
@@ -49,6 +49,7 @@ with st.form('Story elements Form'):
                 )
                         
         submitted = st.form_submit_button('Pull Initial Elements')
-
+        if submitted:
+                st.write(f'I'd like you to create a story about my {relation}, {name_of_loved}. The story's Genre will be: {genre}, with a setting as: {setting}. A supporting character will be: {supporting_character}, with a plot element of: {plot_elements}. The theme of the story is: {theme}, a magical object, included somewhere in the story is a: {magical_objects}, and the tone will be: {tone} ")
         if step == 'AI Story Builder':
                 st.write('ai chat will receive the elements inputs')
