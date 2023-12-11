@@ -16,7 +16,10 @@ with st.form('Story elements Form'):
                         st.warning('Please upload at least one image of your loved one')
                 lmnt_cols = st.columns(2)
                 lmnt_cols[0].text_input('Name of loved one')
-                lmnt_cols[0]
+                Genre = lmnt_cols[0].selectbox(
+                        "Choose the Genre:",
+                      options=["Adventure", "Fairy Tale", "Animal Story", "Space Exploration", "Magical Fantasy", "surprise me"]
+                )
                 lmnt_cols[1].text_input('Relation to loved one')
 
         submitted = st.form_submit_button('Pull Elements')
