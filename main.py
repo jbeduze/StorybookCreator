@@ -23,8 +23,3 @@ with st.form('Story elements Form'):
 
         if step == 'AI Story Builder':
                 #ai chat will receive the elements inputs
-
-
-
-# def Elements_pool():
-#   st.file_uploader(), st.file_uploader()
