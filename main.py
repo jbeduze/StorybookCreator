@@ -1,5 +1,5 @@
 import streamlit as st
-st.title('Storybook creator')
+st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 
 with st.form('Story elements Form'):
@@ -54,3 +54,5 @@ with st.form('Story elements Form'):
                 st.write(f"I'd like you to create a story about my {relation}, {name_of_loved}. The story's Genre will be: {genre}, with a setting as: {setting}. A supporting character will be: {supporting_character}, with a plot element of: {plot_elements}. The theme of the story is: {theme}, a magical object, included somewhere in the story is a: {magical_objects}, and the tone will be: {tone} ")
         if step == 'AI Story Builder':
                 st.write('ai chat will receive the elements inputs')
+
+#'AI Story Builder', 'Build Summary', 'Download Story'
