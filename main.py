@@ -18,7 +18,7 @@ with st.form('Story elements Form'):
                 lmnt_cols = st.columns(2)
                 with lmnt_cols[0]:
                         name_of_loved = st.text_input('Name of loved one')
-                        Genre = st.selectbox(
+                        genre = st.selectbox(
                         "Choose the Genre:",
                         options=["Adventure", "Fairy Tale", "Animal Story", "Space Exploration", "Magical Fantasy", "surprise me"]
                 )
