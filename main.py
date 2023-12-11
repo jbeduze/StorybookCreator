@@ -15,5 +15,6 @@ def Story_form():
       "---"
 
 
-def Elements_pool() = st.file_uploader(), st.file_uploader()
+def Elements_pool():
+  st.file_uploader(), st.file_uploader()
 
