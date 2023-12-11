@@ -12,7 +12,7 @@ def Story_form():
       st.markdown("Let's get started, please fill out the following fields:")
       lmnt_cols = st.columns(2)
       lmnt_cols[0].text_input('relation')
-      "---"
+      '---'
 
 
 def Elements_pool():
