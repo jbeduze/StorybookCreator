@@ -28,4 +28,3 @@ with st.form('Story elements Form'):
 
 # def Elements_pool():
 #   st.file_uploader(), st.file_uploader()
-
