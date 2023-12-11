@@ -2,7 +2,7 @@ import streamlit as st
 st.write('Hello fools!')
 
 with st.form('Story elements Form'):
-        options = ['Initial story Elements','AI Story Builder', 'Build out Summary', 'Download Story']
+        options = ['Initial story Elements','AI Story Builder', 'Build Summary', 'Download Story']
         radio_cols = st.columns([.25,10])
         step = radio_cols[1].radio(label='', label_visibility='collapsed', options=options, horizontal=True, index=0)
         if step == 'Initial story Elements':
