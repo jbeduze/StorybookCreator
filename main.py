@@ -9,7 +9,6 @@ with st.form('Story elements Form'):
                 st.markdown("Let's get started, please fill out the following fields:")
                 'upload a pciture of a loved one here:'
                 uploaded_img = st.file_uploader("Upload a picture of the person/pet you'd like on a card, board, or coloring page", type=['png', 'jpg', 'jpeg', 'gif'])
-          # Check if an image has been uploaded
                 if uploaded_img is not None:
                         from PIL import Image
                         image = Image.open(uploaded_img)
