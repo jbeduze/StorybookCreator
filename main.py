@@ -3,9 +3,9 @@ st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 
 
-tab_INI, tab2, tab3, tab4 = st.tabs[("Initial story Elements", "AI Story Builder", "Build Summary", "Download Story")]
+tab1, tab2, tab3, tab4 = st.tabs[("Initial story Elements", "AI Story Builder", "Build Summary", "Download Story")]
 
-with tab_INI:
+with tab1:
         with st.form('Story elements Form'):
                 st.markdown("Let's get started, please fill out the following fields:")
                 'upload a pciture of a loved one here:'
