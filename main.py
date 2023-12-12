@@ -3,7 +3,7 @@ st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 
 
-tab_INI, tab2, tab3, tab4 = st.tabs(["Initial_Story_Elements", "AI_Story_Builder", "Build_Summary", "Download_Story"])
+tab_INI, tab_AI, tab3, tab4 = st.tabs(["Initial_Story_Elements", "AI_Story_Builder", "Build_Summary", "Download_Story"])
 
 with tab_INI:
         with st.form('Story elements Form'):
@@ -52,7 +52,7 @@ with tab_INI:
         submitted = st.form_submit_button('Pull Initial Elements')
         if submitted:
                 st.write(f"I'd like you to create a story about my {relation}, {name_of_loved}. The story's Genre will be: {genre}, with a setting as: {setting}. A supporting character will be: {supporting_character}, with a plot element of: {plot_elements}. The theme of the story is: {theme}, a magical object, included somewhere in the story is a: {magical_objects}, and the tone will be: {tone} ")
-with tab2:
+with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 #'AI Story Builder', 'Build Summary', 'Download Story'
