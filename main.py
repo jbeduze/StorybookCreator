@@ -3,7 +3,7 @@ st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 
 
-tab1, tab2, tab3, tab4 = st.tab(["Initial_Story_Elements", "AI_Story_Builder", "Build_Summary", "Download_Story"])
+tab1, tab2, tab3, tab4 = st.tabs(["Initial_Story_Elements", "AI_Story_Builder", "Build_Summary", "Download_Story"])
 
 with tab1:
         with st.form('Story elements Form'):
