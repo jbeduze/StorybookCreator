@@ -1,6 +1,6 @@
 import streamlit as st
 st.title('Storybook Creator')
-st.markdown(***"Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
+st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 "---"
 tab_INI, tab_AI, tab3, tab4 = st.tabs(["Initial Story Elements", "AI Story Builder", "Build Summary", "Download Story"])
 
