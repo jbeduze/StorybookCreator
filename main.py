@@ -52,6 +52,7 @@ with tab_INI:
                 if submitted_elements:
                         st.success("We've collected and submitted the information you provided, pop over to the next tab (AI Story builder) to see the AI at work!")
                         with tab_AI: st.write(f"I'd like you to create a story about my {relation}, {name_of_loved}. The story's Genre will be: {genre}, with a setting as: {setting}. A supporting character will be: {supporting_character}, with a plot element of: {plot_elements}. The theme of the story is: {theme}, a magical object, included somewhere in the story is a: {magical_objects}, and the tone will be: {tone} ")
+                        with tab_AI: image
 with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
