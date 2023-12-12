@@ -1,8 +1,7 @@
 import streamlit as st
 st.title('Storybook Creator')
-st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
-
-
+st.markdown(***"Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
+"---"
 tab_INI, tab_AI, tab3, tab4 = st.tabs(["Initial Story Elements", "AI Story Builder", "Build Summary", "Download Story"])
 
 with tab_INI:
@@ -51,7 +50,7 @@ with tab_INI:
                         
                 submitted_elements = st.form_submit_button('Pull Initial Elements')
                 if submitted_elements:
-                        st.write("We've collected all of your submitted inform,ation and submitted it to our custom Ai Chat, pop over to the next tab to see the AI at work!")
+                        st.success("We've collected and submitted the information you provided, pop over to the next tab (AI Story builder) to see the AI at work!")
                         with tab_AI: st.write(f"I'd like you to create a story about my {relation}, {name_of_loved}. The story's Genre will be: {genre}, with a setting as: {setting}. A supporting character will be: {supporting_character}, with a plot element of: {plot_elements}. The theme of the story is: {theme}, a magical object, included somewhere in the story is a: {magical_objects}, and the tone will be: {tone} ")
 with tab_AI:
         st.write('ai chat will receive the elements inputs')
