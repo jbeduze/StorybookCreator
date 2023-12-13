@@ -64,7 +64,7 @@ with tab_BS:
         container3 = st.container(border=True)
         container4 = st.container(border=True)
         container5 = st.container(border=True)
-        col_1, col_2 = st.columns(2)
+col_1, col_2 = st.columns(2)
         container.write("Your story book's title:")
         container.title('Title placeholder')
         container2.col_1.write("Page 1 Image")
