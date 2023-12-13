@@ -64,11 +64,17 @@ with tab_BS:
         container3 = st.container(border=True)
         container4 = st.container(border=True)
         container5 = st.container(border=True)
-        col1, col2 = st.columns(2)
+        
         container.write("Your story book's title:")
         container.title('Title placeholder')
-        container2.col1.write("Page 1 Image")
-        container2.col2.write("Page 2 Narrative")
+        container2.write("Page 1 Image")
+        container2.write("Page 2 Narrative")
+        container3.write("Page 1 Image")
+        container3.write("Page 2 Narrative")
+        container4.write("Page 1 Image")
+        container4.write("Page 2 Narrative")
+        container5.write("Page 1 Image")
+        container5.write("Page 2 Narrative")
         
       
         st.write("Your storybook's narrative and pages in order:")
