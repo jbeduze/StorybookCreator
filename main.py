@@ -68,8 +68,8 @@ with tab_BS:
                 st.title('Title placeholder')
         with con_2: 
                 col_1, col_2 = st.columns(2)
-                with col_1 = st.write("Page 1 Image")
-                with col_2 = st.write("Page 2 Narrative")
+                with col_1: st.write("Page 1 Image")
+                with col_2: st.write("Page 2 Narrative")
         
       
         st.write("Your storybook's narrative and pages in order:")
