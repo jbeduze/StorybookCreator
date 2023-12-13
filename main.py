@@ -68,7 +68,7 @@ with tab_BS:
 
 
         
-        st.submit_button("Finalize the story")
+        st.button("Finalize the story")
                 
 
 #'AI Story Builder', 'Build Summary', 'Download Story'
