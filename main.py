@@ -60,12 +60,12 @@ with tab_AI:
 with tab_BS:
         col_1, col_2 = st.columns(2)
         container = st.container(border=True)
-        con_2 = st.container
+        container2 = st.container(border=True)
         con_3 = st.container
         con_4 = st.container
         con_5 = st.container
         container.write("Your story book's title:")
-        con_1.title('Title placeholder')
+        container2.title('Title placeholder')
         con_2.col_1.write("Page 1 Image")
         con_2.col_2.write("Page 2 Narrative")
         
