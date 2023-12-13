@@ -65,10 +65,8 @@ with tab_BS:
         st.write("Your storybook's narrative and pages in order:")
         '---'
         st.subheader("Related data")
-        
         '---'
-        
-        val = None
+        "---"
         with col1:
             st.write("stuff in 1")
         with col2:
