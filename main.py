@@ -58,13 +58,18 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
-        with st.container:
+        con_1 = st.container
+        con_2 = st.container
+        con_3 = st.container
+        con_4 = st.container
+        con_5 = st.container
+        with con_1:
                 st.write("Your story book's title:")
                 st.title('Title placeholder')
-        with st.container: 
-                col_1,col_2 = st.columns(2)
-                col_1 = st.write("Page 1 Image")
-                col_2 = st.write("Page 2 Narrative")
+        with con_2: 
+                col_1, col_2 = st.columns(2)
+                with col_1 = st.write("Page 1 Image")
+                with col_2 = st.write("Page 2 Narrative")
         
       
         st.write("Your storybook's narrative and pages in order:")
