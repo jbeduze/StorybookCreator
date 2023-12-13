@@ -58,25 +58,16 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
-        col_PGodd, col_PGeven = st.columns(2)
-        st.write("Your story book's title:")
-        st.title('Title placeholder')
-        '---'
-        st.write("Your storybook's narrative and pages in order:")
-        '---'
-        with col_PGodd: st.write("page 1 image placeholder")
-        with col_PGeven: st.write("narrative page 2 placeholder")
-        '---'
-        with col_PGodd: st.write("page 2 image placeholder")
-        with col_PGeven: st.write("narrative page 4 placeholder")
-        '---'
-        with col1:
-            st.write("stuff in 1")
-        with col2:
-            val = st.slider('slider in col 2', 1, 50)
-        st.markdown(f'<div style="text-align: center">Very long winded way of saying value is: {val}</div>', unsafe_allow_html=True)
-        st.markdown('----')
+        con_1, con_2, con_3, con_4, con_5 = st.container(5)
+        con_1 = st.write("Your story book's title:")
         
-        st.write('post')
+        st.title('Title placeholder')
+      
+        st.write("Your storybook's narrative and pages in order:")
+
+
+        
+        st.submit_button("Finalize the story")
+                
 
 #'AI Story Builder', 'Build Summary', 'Download Story'
