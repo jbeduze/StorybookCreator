@@ -64,7 +64,8 @@ with tab_BS:
         '---'
         st.write("Your storybook's narrative and pages in order:")
         '---'
-        st.subheader("Related data")
+        with col_PGodd: st.write("page 1 image placeholder")
+        with col_PGeven: st.write("narrative page 2 placeholder")
         '---'
         "---"
         with col1:
