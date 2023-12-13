@@ -59,7 +59,11 @@ with tab_AI:
 
 with tab_BS:
         col_1, col_2 = st.columns(2)
-        container, container2, container3, container4, container5 = st.container(5, border=True)
+        container = st.container(border=True) 
+        container2 = st.container(border=True)
+        container3 = st.container(border=True)
+        container4 = st.container(border=True)
+        container5 = st.container(border=True)
         # con_3 = st.container
         # con_4 = st.container
         # con_5 = st.container
