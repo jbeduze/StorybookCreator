@@ -2,7 +2,7 @@ import streamlit as st
 st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 "---"
-tab_INI, tab_AI, tab3, tab4 = st.tabs(["Initial Story Elements", "AI Story Builder", "Build Summary", "Download Story"])
+tab_INI, tab_AI, tab_BS, tab_DS = st.tabs(["Initial Story Elements", "AI Story Builder", "Build Summary", "Download Story"])
 
 with tab_INI:
         with st.form('Story elements Form'):
@@ -56,5 +56,23 @@ with tab_INI:
                         with tab_AI: st.image
 with tab_AI:
         st.write('ai chat will receive the elements inputs')
+
+with tab_BS:
+        st.write('Your story book's title:')
+        st.title('Title placeholder')
+        "---"
+        '---'
+        st.markdown('----')
+        st.subheader("Related data")
+        (col1, col2) = st.columns(2)
+        val = None
+        with col1:
+            st.write("stuff in 1")
+        with col2:
+            val = st.slider('slider in col 2', 1, 50)
+        st.markdown(f'<div style="text-align: center">Very long winded way of saying value is: {val}</div>', unsafe_allow_html=True)
+        st.markdown('----')
+        
+        st.write('post')
 
 #'AI Story Builder', 'Build Summary', 'Download Story'
