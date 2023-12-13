@@ -58,7 +58,7 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
-        st.write('Your story book's title:')
+        st.write("Your story book's title:")
         st.title('Title placeholder')
         "---"
         '---'
