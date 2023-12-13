@@ -58,10 +58,9 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
-        con_1 = st.container(border=True)
-        con_2 = st.container(border=True)
-        with con_1: st.write("Your story book's title:")
-        with con_2: st.write("your mom is hot")
+        
+        with st.container: st.write("Your story book's title:")
+        with st.container= st.write("your mom is hot")
         st.title('Title placeholder')
       
         st.write("Your storybook's narrative and pages in order:")
