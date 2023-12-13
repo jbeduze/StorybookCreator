@@ -58,13 +58,16 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
+        col_PGodd, col_PGeven = st.columns(2)
         st.write("Your story book's title:")
         st.title('Title placeholder')
-        "---"
         '---'
-        st.markdown('----')
+        st.write("Your storybook's narrative and pages in order:")
+        '---'
         st.subheader("Related data")
-        (col1, col2) = st.columns(2)
+        
+        '---'
+        
         val = None
         with col1:
             st.write("stuff in 1")
