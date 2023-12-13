@@ -67,7 +67,9 @@ with tab_BS:
         with col_PGodd: st.write("page 1 image placeholder")
         with col_PGeven: st.write("narrative page 2 placeholder")
         '---'
-        "---"
+        with col_PGodd: st.write("page 2 image placeholder")
+        with col_PGeven: st.write("narrative page 4 placeholder")
+        '---'
         with col1:
             st.write("stuff in 1")
         with col2:
