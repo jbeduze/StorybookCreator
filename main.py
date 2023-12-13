@@ -59,9 +59,14 @@ with tab_AI:
 
 with tab_BS:
         
-        with st.container: st.write("Your story book's title:")
-        with st.container= st.write("your mom is hot")
-        st.title('Title placeholder')
+        with st.container:
+                st.write("Your story book's title:")
+                st.title('Title placeholder')
+        with st.container: 
+                col_1,col_2 = st.columns(2)
+                col_1 = st.write("Page 1 Image")
+                col_2 = st.write("Page 2 Narrative")
+        
       
         st.write("Your storybook's narrative and pages in order:")
 
