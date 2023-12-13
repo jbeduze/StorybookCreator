@@ -58,15 +58,13 @@ with tab_AI:
         st.write('ai chat will receive the elements inputs')
 
 with tab_BS:
-        col_1, col_2 = st.columns(2)
+        
         container = st.container(border=True) 
         container2 = st.container(border=True)
         container3 = st.container(border=True)
         container4 = st.container(border=True)
         container5 = st.container(border=True)
-        # con_3 = st.container
-        # con_4 = st.container
-        # con_5 = st.container
+        col_1, col_2 = st.columns(2)
         container.write("Your story book's title:")
         container.title('Title placeholder')
         container2.col_1.write("Page 1 Image")
