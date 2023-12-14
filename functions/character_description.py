@@ -5,7 +5,7 @@ import requests
 ### OVERVIEW: Get_Character_Description function makes a https request.post call to OpenAI chat completions using OpenAI Vision model. An image is provided and OpenAI Vision can look at the image and provide a characer description. ###
 
 # 1. Setup and Variables
-openai_api_key = st.secrets.openai.api_key               # Used to formulate authorization header
+openai_api_key = st.secrets.openai_api_key               # Used to formulate authorization header
 model = "gpt-4-vision-preview"                            # Used in request payload
 url = "https://api.openai.com/v1/chat/completions"        # Used in request.post
 contenttype = "application/json"                          # Used in request headers
