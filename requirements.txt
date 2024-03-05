@@ -2,3 +2,4 @@ streamlit
 openai
 pybase64
 requests
+st-paywall
