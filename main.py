@@ -5,6 +5,9 @@ from st_paywall import add_auth
 st.title('Storybook Creator')
 st.markdown("Welcome to the story book creator, a place where AI technology can make any person on the planet the main character! Don't believe me? Give it a shot for yourself!")
 add_auth(required=True)
+
+st.write(f"status: {st.session_state.user_subscribed}")
+st.write("registered email: {st.session_state.email}")
 "---"
 tab_INI, tab_AI, tab_BS, tab_DS = st.tabs(["Initial Story Elements", "AI Story Builder", "Build Summary", "Download Story"])
 
