@@ -1,4 +1,5 @@
 import streamlit as st
+from st_paywall import add_auth
 #from functions import character_description                                        # Imports the get_character_description function
 
 st.title('Storybook Creator')
